@@ -1,0 +1,86 @@
+<!--
+#####################################
+#   Housing Database
+#   DSCI 551
+#   Changxun Li
+#####################################
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title></title>
+    </head>
+
+    <!-- Add background image to webpage -->
+    <body style="background-image: url(../static/b0.jpg)">
+        <div class="container-sm">
+            <div class="card-body">
+                <h2 class="card-title">Search/Analytics Input</h2>
+                <b style="color:blue;">{{response}}</b>
+
+                <!-- Form to fill out with command -->
+                <form action="/search" method="POST">
+                    <div class="form-group">
+                        <label for="text">Enter a Search/Analytics Query</label>
+                        <input type="text" name="query" required class="form-control">
+                    </div>
+                    <!-- Button for submitting form -->
+                    <button type="submit" class="btn btn-primary">Confirm Query</button>
+                </form>
+            </div>
+
+
+            <div class="card-body">
+                <h2 class="card-title">Search/Analytics Guide</h2>
+                <table class="table table-dark">
+                    <tr>
+                        <th scope="col">Command</th>
+                        <th scope="col">Usage</th>
+                        <th scope="col">Syntax</th>
+                        <th scope="col">Example</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Search/Analytics</td>
+                            <td>SQL like search/analytics on any file</td>
+                            <td>SQL query, with ; ending</td>
+                            <td>SELECT name FROM /user/people.csv WHERE age >= 20;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="card-body" align="center">
+                <a class="btn btn-success" href="/" role="button">Go To Command Line</a>
+            </div>
+
+            <div class="card-body" align="center">
+                <a class="btn btn-success" href="/navigate" role="button">Go To Navigation</a>
+            </div>
+
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-confirmation2/dist/bootstrap-confirmation.min.js"
+                integrity="sha384-bdQ/TNQXoev0m9fQKnfNuV311wHGwzudm5aLY/th50xmEjAo3n8ov5yuNAfTPN+5"
+                crossorigin="anonymous"></script>
+        <script>
+        $('[data-toggle=confirmation]').confirmation({
+           rootSelector: '[data-toggle=confirmation]'
+        });
+        </script>
+    </body>
+</html>
