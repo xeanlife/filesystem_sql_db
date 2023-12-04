@@ -3,7 +3,7 @@
 ## Objective
 Developing and utilizing an emulation-based system for distributed file storage and parallel computation. The project consists of three major tasks: (1) building an emulated distributed file system (EDFS); (2) implementing partition-based map and reduce (PMR) on data stored on EDFS for search/analytics function in task 3; (3) creating an app that uses the implemented PMR methods.
 
-## Files:
+## Files
 
 ### Python File
 [app.py](./app.py) - HTML generation and SQL calling
