@@ -10,22 +10,22 @@
 ### HTML Files
 [./templates](./templates)
 
-	Command Line Input HTML
-	[cmd_main.html](./templates/cmd_main.html)
+	#### Command Line Input HTML
+	cmd_main.html
 
-	Search/Analytics Input HTML
+	#### Search/Analytics Input HTML
 	search_main.html
 
-	Nagivation HTML
+	#### Nagivation HTML
 	navigate.html
 
-	cat Command Display HTML
+	#### cat Command Display HTML
 	cat_display.html
 
-	ls Command Display HTML
+	#### ls Command Display HTML
 	ls_display.html
 
-	Search/Analytics Display HTML
+	#### Search/Analytics Display HTML
 	search_display.html
 
 
